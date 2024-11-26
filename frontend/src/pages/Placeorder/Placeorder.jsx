@@ -86,26 +86,26 @@ const Placeorder = () => {
             <input required name='phone' onChange={onChangeHandler} value={data.phone} type="text" placeholder='Phone' />
         </div>
           <div className="place-order-right">
-            <div className="cart-total">
-                <h2>Cart Totals</h2>
-            </div>
-            <div className="cart-total-details">
-                <p>Subtotal</p>
-                <p>₹{getTotalCartAmount()}</p>
-            </div>
-            <hr />
-            <div className="cart-total-details">
-                <p>delivery Fee</p>
-                <p>₹{50}</p>
-            </div>
-            <hr />
-            <div className="cart-total-details">
-                <b>Total</b>
-                <b>₹{getTotalCartAmount()+50}</b>
-            </div>
-            <div>
-                <button type='submit'>PROCEED TO PAYMENT</button>
-            </div>
+          <div className="cart-total">
+                    <h2>Cart Totals</h2>
+                    <div>
+                        <div className="cart-total-details">
+                            <p>Subtotal</p>
+                            <p>₹{getTotalCartAmount()}</p>
+                        </div>
+                        <hr />
+                        <div className="cart-total-details">
+                            <p>Delivery Fee</p>
+                            <p>₹{50}</p>
+                        </div>
+                        <hr />
+                        <div className="cart-total-details">
+                            <b>Total</b>
+                            <b>₹{getTotalCartAmount()+50}</b>
+                        </div>
+                    </div>
+                    <button type='submit'>PROCEED TO PAYMENT</button>
+                </div>
           </div>
         </form>
     </> 
